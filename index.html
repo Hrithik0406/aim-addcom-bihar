@@ -1,15 +1,865 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2306b6d4'><path d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z'/></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AIM Addcom Private Limited | CCTV Surveillance & OOH Outdoor Media Patna, Bihar</title>
-    <meta name="description" content="Patna and Bihar's leading integrated surveillance infrastructure & OOH outdoor advertising network. Turnkey CCTV installations and high-impact unipoles, hoardings, and holding stands." />
-    <script type="module" crossorigin src="./assets/index-B0QYCjW4.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BXc2bP7R.css">
-  </head>
-  <body class="bg-[#0b0f19] text-slate-100 antialiased">
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>AIM Addcom Private Limited | Government Surveillance Infrastructure & OOH Media Patna, Bihar</title>
+  <meta name="description" content="AIM Addcom Private Limited is Bihar Government's trusted direct CCTV surveillance contractor in Patna and Bihar's premier OOH outdoor media advertising network. Expanding civic surveillance across India." />
+  <link rel="icon" type="image/png" href="./assets/aim_addcom_logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            brandNavy: {
+              50: '#F0F5FA',
+              100: '#E1ECF5',
+              600: '#1B3B60',
+              800: '#122740',
+              900: '#0B1A2C',
+              DEFAULT: '#0E2338',
+            },
+            brandRed: {
+              50: '#FEF2F2',
+              100: '#FEE2E2',
+              500: '#EF4444',
+              600: '#DC2626',
+              700: '#B91C1C',
+              DEFAULT: '#DC2626',
+            },
+            brandGold: {
+              50: '#FFFBEB',
+              100: '#FEF3C7',
+              400: '#FBBF24',
+              500: '#F59E0B',
+              600: '#D97706',
+              DEFAULT: '#F59E0B',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Subtle Target / Bullseye Watermark inspired by the brand logo */
+    .bg-bullseye-pattern {
+      background-image: 
+        radial-gradient(circle at 50% 50%, rgba(220, 38, 38, 0.03) 0%, transparent 20%),
+        radial-gradient(circle at 50% 50%, rgba(14, 35, 56, 0.03) 21%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(14, 35, 56, 0.02) 41%, transparent 60%);
+      background-size: 800px 800px;
+    }
+    .grid-lines {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(14, 35, 56, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(14, 35, 56, 0.03) 1px, transparent 1px);
+    }
+    .active-tab {
+      background-color: #0E2338 !important;
+      color: #FFFFFF !important;
+      border-color: #0E2338 !important;
+      box-shadow: 0 4px 14px rgba(14, 35, 56, 0.2);
+    }
+    .status-pulse {
+      animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse-ring {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.15); }
+    }
+  </style>
+</head>
+<body class="bg-[#FBFDFE] text-slate-800 antialiased font-sans selection:bg-brandRed/10 selection:text-brandRed">
+
+  <!-- TOP GOVERNMENT & ACCREDITATION BANNER -->
+  <div class="bg-brandNavy text-white py-2 px-4 border-b border-brandNavy-800 text-xs font-medium">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-brandRed/90 text-white font-bold text-[10px] tracking-wider uppercase">
+          <span class="w-1.5 h-1.5 rounded-full bg-white status-pulse"></span>
+          Active State Partner
+        </span>
+        <span class="text-slate-200 hidden sm:inline">Official CCTV Surveillance Contractor to the <strong>Government of Bihar</strong> in Patna</span>
+        <span class="text-slate-200 sm:hidden font-semibold">Bihar Govt. Surveillance Contractor</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] text-slate-300">
+        <span class="hidden md:inline">CIN: <span class="font-mono text-brandGold-400 font-semibold">U74900BR2013PTC020992</span></span>
+        <span>•</span>
+        <a href="tel:+919431088291" class="hover:text-brandGold-400 font-semibold flex items-center gap-1 transition">
+          <span>📞</span> +91 94310 88291
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAVIGATION BAR (LIGHT, CRISP, CORPORATE) -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm transition">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo & Identity -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-full p-0.5 bg-white shadow-md border border-slate-200 flex-shrink-0 group-hover:scale-105 transition transform">
+          <img src="./assets/aim_addcom_logo.png" alt="AIM Addcom Logo" class="w-full h-full object-contain rounded-full" />
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-1.5">
+            <span class="text-lg sm:text-xl font-display font-black tracking-tight text-brandNavy">AIM ADDCOM</span>
+            <span class="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded bg-brandRed/10 text-brandRed border border-brandRed/20">Pvt Ltd</span>
+          </div>
+          <span class="text-[11px] font-semibold text-slate-500 tracking-wide">
+            Govt. Surveillance Infrastructure • OOH Outdoor Media
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
+        <a href="#government-surveillance" class="hover:text-brandRed transition flex items-center gap-1">
+          <span>Govt. Surveillance</span>
+          <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.2 rounded-full">Patna Grid</span>
+        </a>
+        <a href="#expansion-roadmap" class="hover:text-brandRed transition">Expansion Roadmap</a>
+        <a href="#ooh-network" class="hover:text-brandRed transition">OOH Media Network</a>
+        <a href="#command-tech" class="hover:text-brandRed transition">Tech & Infrastructure</a>
+        <a href="#about-company" class="hover:text-brandRed transition">Corporate Profile</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-2.5">
+        <a href="#inquiry-section" class="hidden sm:inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-brandNavy hover:bg-brandNavy-600 text-white font-bold text-xs uppercase tracking-wider transition shadow-sm">
+          <span>Govt. RFP / Project Desk</span>
+          <span>→</span>
+        </a>
+        <a href="https://wa.me/919431088291?text=Hello%20AIM%20Addcom,%20I%20would%20like%20to%20discuss%20a%20Government%20Surveillance%20/%20OOH%20Media%20requirement." target="_blank" class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200 transition" title="WhatsApp Direct Desk">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.584 1.761.813 2.802.813h.005c3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.779-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.528-.491-4.996-1.344l-5.004 1.313 1.339-4.891c-.961-1.528-1.506-3.328-1.506-5.078 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION: LIGHT, GRAPHIC-RICH, AUTHORITATIVE -->
+  <section class="relative bg-gradient-to-b from-white via-slate-50 to-white pt-10 sm:pt-16 pb-16 border-b border-slate-200 bg-bullseye-pattern overflow-hidden">
+    
+    <!-- Decorative Watermark Element based on Brand Bullseye Target -->
+    <div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/3 w-[620px] h-[620px] rounded-full border border-slate-200/80 pointer-events-none hidden lg:block">
+      <div class="w-full h-full rounded-full border border-slate-200/60 p-16">
+        <div class="w-full h-full rounded-full border border-brandNavy/10 p-20 relative">
+          <div class="absolute inset-0 flex items-center justify-center opacity-15">
+            <img src="./assets/aim_addcom_logo.png" class="w-64 h-64 object-contain filter grayscale" alt="watermark" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Trust Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200 shadow-sm text-xs font-bold text-slate-800">
+            <span class="w-2 h-2 rounded-full bg-brandRed status-pulse"></span>
+            <span class="text-brandNavy">Govt. of Bihar Direct Partner</span>
+            <span class="text-slate-300">|</span>
+            <span class="text-brandGold-600 font-extrabold">Patna City Surveillance Grid</span>
+          </div>
+
+          <!-- Main Title -->
+          <h1 class="text-3xl sm:text-5xl lg:text-[3.25rem] font-display font-extrabold text-brandNavy leading-[1.12] tracking-tight">
+            Securing Bihar’s Public Infrastructure. <br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandNavy via-brandRed to-brandNavy">
+              Expanding Civic Surveillance Across India.
+            </span>
+          </h1>
+
+          <!-- Subtext emphasizing Direct Government Mandate -->
+          <p class="text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-2xl">
+            AIM Addcom Private Limited delivers turnkey, mission-critical <strong>public security surveillance networks directly to the Government of Bihar in Patna</strong>. Backed by state-level Command & Control readiness and Bihar’s premier highway OOH outdoor media presence, we are actively scaling civic safety infrastructure to new districts and interstate corridors.
+          </p>
+
+          <!-- Core Value Differentiators -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            <div class="p-3.5 bg-white rounded-xl border border-slate-200/90 shadow-sm">
+              <div class="text-brandRed text-xl font-bold mb-1">🏛️ 100% Govt. Direct</div>
+              <p class="text-xs text-slate-500 font-medium">No domestic/small retail retail sales. Exclusively municipal, state & civic infrastructure.</p>
+            </div>
+            <div class="p-3.5 bg-white rounded-xl border border-slate-200/90 shadow-sm">
+              <div class="text-brandNavy text-xl font-bold mb-1">📍 Patna Core Grid</div>
+              <p class="text-xs text-slate-500 font-medium">High-density ANPR, PTZ optical zoom & junction surveillance operational in capital Patna.</p>
+            </div>
+            <div class="p-3.5 bg-white rounded-xl border border-slate-200/90 shadow-sm">
+              <div class="text-brandGold-600 text-xl font-bold mb-1">🚀 Multi-State Plan</div>
+              <p class="text-xs text-slate-500 font-medium">Strategic roadmap extending across Bihar districts, Jharkhand, and East India zones.</p>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-3.5 pt-2">
+            <a href="#government-surveillance" class="px-6 py-3.5 rounded-xl bg-brandRed hover:bg-brandRed-700 text-white font-bold text-sm tracking-wide shadow-md shadow-brandRed/20 transition transform active:scale-95 flex items-center gap-2">
+              <span>View Bihar Govt. Deployments</span>
+              <span>↓</span>
+            </a>
+            <a href="#expansion-roadmap" class="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-brandNavy font-bold text-sm border-2 border-brandNavy/20 hover:border-brandNavy transition shadow-sm flex items-center gap-2">
+              <span>See Expansion Roadmap</span>
+              <span>→</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Visual Graphic Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-3xl p-6 shadow-xl border border-slate-200 relative overflow-hidden">
+            
+            <!-- Target concentric accent in corner -->
+            <div class="absolute -right-12 -top-12 w-48 h-48 rounded-full border-4 border-brandGold-100 flex items-center justify-center">
+              <div class="w-32 h-32 rounded-full border-4 border-brandRed-100"></div>
+            </div>
+
+            <div class="relative z-10 space-y-5">
+              
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-10 h-10 rounded-xl bg-brandNavy flex items-center justify-center text-white font-bold">
+                    🎯
+                  </div>
+                  <div>
+                    <h3 class="text-sm font-bold text-brandNavy">Bihar Surveillance Command</h3>
+                    <p class="text-[11px] text-slate-500">Live Operating Overview • Patna Division</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-full border border-emerald-200">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 status-pulse"></span>
+                  Active 24/7
+                </span>
+              </div>
+
+              <!-- Metrics -->
+              <div class="grid grid-cols-2 gap-3">
+                <div class="bg-slate-50 rounded-2xl p-4 border border-slate-100">
+                  <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Mandate Scope</p>
+                  <p class="text-xl font-display font-extrabold text-brandNavy mt-1">Government</p>
+                  <p class="text-[11px] text-slate-500 mt-0.5">Direct Bihar State & Municipal Level</p>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-4 border border-slate-100">
+                  <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Deployment Base</p>
+                  <p class="text-xl font-display font-extrabold text-brandRed mt-1">Patna, Bihar</p>
+                  <p class="text-[11px] text-slate-500 mt-0.5">High-Security & Junction Nodes</p>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-4 border border-slate-100">
+                  <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Incorporated</p>
+                  <p class="text-xl font-display font-extrabold text-brandNavy mt-1">2013 (12+ Yrs)</p>
+                  <p class="text-[11px] text-slate-500 mt-0.5">CIN: U74900BR2013PTC020992</p>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-4 border border-slate-100">
+                  <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider">OOH Advertising</p>
+                  <p class="text-xl font-display font-extrabold text-brandGold-600 mt-1">Prime Highways</p>
+                  <p class="text-[11px] text-slate-500 mt-0.5">Unipoles & Gantries State-Wide</p>
+                </div>
+              </div>
+
+              <!-- Quick Verification Box -->
+              <div class="bg-brandNavy-50 rounded-2xl p-4 border border-brandNavy-100 flex items-center justify-between">
+                <div>
+                  <p class="text-xs font-bold text-brandNavy">Need Official Verification or RFP Specs?</p>
+                  <p class="text-[11px] text-slate-600">Download company profile & government credentials.</p>
+                </div>
+                <a href="#inquiry-section" class="px-3 py-1.5 rounded-lg bg-brandNavy text-white font-bold text-xs hover:bg-brandNavy-600 transition">
+                  Contact Desk
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE CORE DIVISIONS: CCTV GOVERNMENT VS OOH MEDIA -->
+  <section id="core-verticals" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-xs font-bold uppercase tracking-widest text-brandRed bg-brandRed/10 px-3 py-1 rounded-full border border-brandRed/20">
+          Core Operating Verticals
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-display font-extrabold text-brandNavy mt-3">
+          Dual Infrastructure Pillars of AIM Addcom
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          From turnkey public safety surveillance for state authorities to prime high-impact outdoor media networks across Bihar's most prominent corridors.
+        </p>
+
+        <!-- Segmented Division Switcher -->
+        <div class="inline-flex p-1.5 bg-slate-100 rounded-2xl border border-slate-200 mt-6 shadow-inner" id="vertical-tabs">
+          <button type="button" onclick="switchVertical('cctv')" id="tab-btn-cctv" class="px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition active-tab">
+            🛡️ Govt. CCTV Infrastructure
+          </button>
+          <button type="button" onclick="switchVertical('ooh')" id="tab-btn-ooh" class="px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider text-slate-600 hover:text-brandNavy transition">
+            📢 OOH Outdoor Media
+          </button>
+        </div>
+      </div>
+
+      <!-- VIEW 1: GOVERNMENT CCTV SURVEILLANCE INFRASTRUCTURE -->
+      <div id="vertical-cctv" class="transition-all duration-300">
+        <div class="bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-10">
+            <div class="lg:col-span-7 space-y-4">
+              <span class="inline-block px-3 py-1 bg-brandRed text-white text-[10px] font-bold uppercase tracking-wider rounded-md">
+                Government Direct Only
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-display font-bold text-brandNavy">
+                Purpose-Built for State Authorities, Municipalities & Public Safety
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                AIM Addcom does not install domestic or small retail CCTV systems. We design, deploy, and maintain <strong>high-availability, industrial-grade surveillance ecosystems directly for the Bihar Government in Patna</strong>. Our architectures are engineered for law enforcement feeds, command room interoperability, and continuous high-bandwidth video telemetry.
+              </p>
+              
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-semibold text-slate-700">✓ Bihar Government Mandate</span>
+                <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-semibold text-slate-700">✓ Smart City Architecture</span>
+                <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-semibold text-slate-700">✓ Central ICCC Interoperability</span>
+                <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-semibold text-slate-700">✓ Fiber & RF Redundancy</span>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-500 uppercase">Current Deployment Status</span>
+                <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Active in Patna</span>
+              </div>
+              <p class="text-sm font-bold text-brandNavy">Civic Surveillance Points & Major Junctions</p>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Integrated network of high-resolution PTZ dome cameras, fixed perimeter units, and ANPR vehicular monitoring operating across Patna’s administrative, commercial, and transit arteries.
+              </p>
+              <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+                <span class="text-slate-600">Expansion Phase:</span>
+                <span class="text-brandRed font-bold">Scaling to other Bihar Districts →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Cards for Govt Surveillance -->
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+              <div class="w-10 h-10 rounded-xl bg-brandNavy/10 text-brandNavy flex items-center justify-center font-bold text-lg mb-3">
+                📷
+              </div>
+              <h4 class="text-base font-bold text-brandNavy mb-1.5">PTZ & ANPR Smart Nodes</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Automated Number Plate Recognition (ANPR) and 360° optical zoom PTZ cameras for round-the-clock traffic and perimeter monitoring.
+              </p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+              <div class="w-10 h-10 rounded-xl bg-brandRed/10 text-brandRed flex items-center justify-center font-bold text-lg mb-3">
+                🖥️
+              </div>
+              <h4 class="text-base font-bold text-brandNavy mb-1.5">Command & Control (ICCC)</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Seamless real-time video wall integration, multi-monitor feeds, and forensic playback systems for law enforcement command centers.
+              </p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+              <div class="w-10 h-10 rounded-xl bg-brandGold/10 text-brandGold-600 flex items-center justify-center font-bold text-lg mb-3">
+                ⚡
+              </div>
+              <h4 class="text-base font-bold text-brandNavy mb-1.5">Hardened Industrial Gear</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Weatherproof IP67/IK10 vandal-resistant enclosures, dedicated solar/battery power backups, and optical fiber loop redundancy.
+              </p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-lg mb-3">
+                📜
+              </div>
+              <h4 class="text-base font-bold text-brandNavy mb-1.5">State Tender Compliance</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Full documentation, compliance readiness for government tenders, e-procurement (GeM), SLA maintenance, and dedicated engineer dispatch.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- VIEW 2: OOH OUTDOOR MEDIA NETWORK -->
+      <div id="vertical-ooh" class="hidden transition-all duration-300">
+        <div class="bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-10">
+            <div class="lg:col-span-7 space-y-4">
+              <span class="inline-block px-3 py-1 bg-brandNavy text-white text-[10px] font-bold uppercase tracking-wider rounded-md">
+                Bihar State Media Assets
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-display font-bold text-brandNavy">
+                High-Impact Unipoles & Billboards Across Prime Corridors
+              </h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                AIM Addcom owns and manages premier Out-of-Home (OOH) advertising real estate throughout Bihar. From high-density city roundabouts in Patna to major inter-district highway arteries, we provide state government campaigns, public sector banks, and top corporate brands with maximum visibility.
+              </p>
+              
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-semibold text-slate-700">✓ Patna Metro Junctions</span>
+                <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-semibold text-slate-700">✓ National Highway Unipoles</span>
+                <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-semibold text-slate-700">✓ Muzaffarpur & Gaya Belts</span>
+                <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs font-semibold text-slate-700">✓ Illumination & Solar Tech</span>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-500 uppercase">State Media Coverage</span>
+                <span class="text-xs font-bold text-brandNavy bg-brandNavy-50 px-2 py-0.5 rounded border border-brandNavy-100">Tier-1 Bihar Cities</span>
+              </div>
+              <p class="text-sm font-bold text-brandNavy">Prime Unipoles, Cantilevers & Bridge Media</p>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                High visibility sites on Bailey Road, Boring Road, Exhibition Road, Kankarbagh, and national bypass corridors ensuring uninterrupted 24/7 brand impressions.
+              </p>
+              <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-semibold">
+                <span class="text-slate-600">Campaign Availability:</span>
+                <a href="#inquiry-section" class="text-brandRed font-bold hover:underline">Request Location Inventory →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- OOH Media Types -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-brandNavy text-white flex items-center justify-center font-bold text-lg mb-3">
+                🛣️
+              </div>
+              <h4 class="text-base font-bold text-brandNavy mb-1">Highway Unipoles</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Oversized, engineered steel unipole structures positioned along high-speed corridors with long-distance viewing angles and full night illumination.
+              </p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-brandRed text-white flex items-center justify-center font-bold text-lg mb-3">
+                🏙️
+              </div>
+              <h4 class="text-base font-bold text-brandNavy mb-1">City Center Gantries & Hoardings</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Dominant rooftop and street-level media in heavy commercial zones of Patna, capturing daily commuters, office workers, and market footfall.
+              </p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-brandGold-500 text-white flex items-center justify-center font-bold text-lg mb-3">
+                📢
+              </div>
+              <h4 class="text-base font-bold text-brandNavy mb-1">Govt. Public Information Campaigns</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Specialized state department public health, social welfare, and tourism campaigns executed across state-wide display networks with verified audit reports.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPANSION ROADMAP SECTION: MULTI-DISTRICT & INTERSTATE -->
+  <section id="expansion-roadmap" class="py-16 bg-[#F8FAFC] border-b border-slate-200 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brandGold-600 bg-brandGold-50 px-3 py-1 rounded-full border border-brandGold-200">
+            Strategic Expansion Horizon
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-display font-extrabold text-brandNavy mt-3">
+            Surveillance & OOH Expansion Roadmap
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+            Currently anchoring the <strong>Bihar Government’s surveillance grid in Patna</strong>, AIM Addcom is actively deploying capabilities across tier-2 cities and neighboring states.
+          </p>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-white border border-slate-200 shadow-sm text-xs font-bold text-brandNavy">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            Phase 1 Active • Phase 2 In Progress
+          </span>
+        </div>
+      </div>
+
+      <!-- Roadmap Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        
+        <!-- STEP 1: PATNA (ACTIVE) -->
+        <div class="bg-white rounded-2xl p-6 border-2 border-emerald-500/80 shadow-md relative">
+          <div class="absolute -top-3 left-6 bg-emerald-600 text-white font-bold text-[10px] tracking-wider uppercase px-2.5 py-0.5 rounded-full shadow-sm">
+            Phase 1 • Active Mandate
+          </div>
+          <div class="pt-2">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-brandNavy">Patna Capital Hub</h3>
+              <span class="text-xl">🏛️</span>
+            </div>
+            <p class="text-xs font-semibold text-emerald-700 mb-3">Bihar Government Direct Partnership</p>
+            <p class="text-xs text-slate-500 leading-relaxed mb-4">
+              Comprehensive city surveillance covering traffic junctions, high-security zones, and municipal monitoring with active Command Room integrations.
+            </p>
+            <ul class="text-[11px] text-slate-600 space-y-1.5 font-medium">
+              <li class="flex items-center gap-1.5">✓ <strong>Core PTZ & ANPR</strong> surveillance</li>
+              <li class="flex items-center gap-1.5">✓ <strong>Patna Junction & Bypass</strong> coverage</li>
+              <li class="flex items-center gap-1.5">✓ <strong>Centralized ICCC</strong> stream feeds</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- STEP 2: NORTH BIHAR (EXPANDING) -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-brandNavy transition">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-bold text-brandNavy">Muzaffarpur & North</h3>
+            <span class="text-xl">📍</span>
+          </div>
+          <p class="text-xs font-semibold text-brandNavy-600 mb-3">Phase 2 • Civic Security Expansion</p>
+          <p class="text-xs text-slate-500 leading-relaxed mb-4">
+            Expanding municipal junction safety, market hub monitoring, and state highway transit security connecting North Bihar trade corridors.
+          </p>
+          <ul class="text-[11px] text-slate-600 space-y-1.5 font-medium">
+            <li class="flex items-center gap-1.5">→ Highway node monitoring</li>
+            <li class="flex items-center gap-1.5">→ District headquarters coverage</li>
+            <li class="flex items-center gap-1.5">→ Commercial zone infrastructure</li>
+          </ul>
+        </div>
+
+        <!-- STEP 3: SOUTH & HERITAGE (EXPANDING) -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-brandNavy transition">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-bold text-brandNavy">Gaya & Bodh Gaya</h3>
+            <span class="text-xl">🪷</span>
+          </div>
+          <p class="text-xs font-semibold text-brandNavy-600 mb-3">Phase 2 • Heritage & Tourism Grid</p>
+          <p class="text-xs text-slate-500 leading-relaxed mb-4">
+            High-density security surveillance designed for international tourist corridors, pilgrim flow management, and smart transit zones.
+          </p>
+          <ul class="text-[11px] text-slate-600 space-y-1.5 font-medium">
+            <li class="flex items-center gap-1.5">→ High-density crowd telemetry</li>
+            <li class="flex items-center gap-1.5">→ International tourism security</li>
+            <li class="flex items-center gap-1.5">→ Airport & transit corridor links</li>
+          </ul>
+        </div>
+
+        <!-- STEP 4: INTERSTATE (PLANNED) -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-brandNavy transition">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-bold text-brandNavy">Interstate Expansion</h3>
+            <span class="text-xl">🚀</span>
+          </div>
+          <p class="text-xs font-semibold text-brandGold-600 mb-3">Phase 3 • Regional Scaling</p>
+          <p class="text-xs text-slate-500 leading-relaxed mb-4">
+            Extending government and civic surveillance contracting models into neighboring states including <strong>Jharkhand, Uttar Pradesh & West Bengal</strong>.
+          </p>
+          <ul class="text-[11px] text-slate-600 space-y-1.5 font-medium">
+            <li class="flex items-center gap-1.5">→ Multi-state civic security bids</li>
+            <li class="flex items-center gap-1.5">→ State border check-post grids</li>
+            <li class="flex items-center gap-1.5">→ Interstate OOH highway network</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GOVERNMENT COMPLIANCE, INFRASTRUCTURE & CREDENTIALS -->
+  <section id="command-tech" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-brandNavy bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
+            Infrastructure & Compliance
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-display font-extrabold text-brandNavy">
+            Engineered for Government Audits & Strict Public Safety SLAs
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Public surveillance projects demand uninterrupted reliability, zero latency, and strict legal compliance. AIM Addcom operates with full regulatory adherence, robust physical hardware, and certified surveillance engineering teams.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="flex items-start gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200/80">
+              <span class="text-brandRed text-lg font-bold">01</span>
+              <div>
+                <h4 class="text-sm font-bold text-brandNavy">Secure Video Encryption & Chain of Custody</h4>
+                <p class="text-xs text-slate-500">Tamper-evident recording, watermarked feeds, and court-admissible forensic video storage standards.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200/80">
+              <span class="text-brandNavy text-lg font-bold">02</span>
+              <div>
+                <h4 class="text-sm font-bold text-brandNavy">Direct Command Room Interconnects</h4>
+                <p class="text-xs text-slate-500">Video telemetry stream feeds directly configured for Patna municipal authorities and state monitoring control rooms.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200/80">
+              <span class="text-brandGold-600 text-lg font-bold">03</span>
+              <div>
+                <h4 class="text-sm font-bold text-brandNavy">Dedicated On-Ground Technical Field Force</h4>
+                <p class="text-xs text-slate-500">Rapid response field repair teams in Patna maintaining continuous camera uptime and line-of-sight clearing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Corporate Profile Badge Card -->
+        <div class="lg:col-span-6" id="about-company">
+          <div class="bg-gradient-to-br from-brandNavy to-brandNavy-800 text-white rounded-3xl p-8 shadow-xl relative overflow-hidden">
+            
+            <div class="relative z-10 space-y-6">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-white p-1 flex items-center justify-center">
+                  <img src="./assets/aim_addcom_logo.png" alt="AIM Addcom" class="w-full h-full object-contain" />
+                </div>
+                <div>
+                  <h3 class="text-xl font-display font-bold">AIM Addcom Private Limited</h3>
+                  <p class="text-xs text-brandGold-400 font-semibold">Established 2013 • Patna, Bihar, India</p>
+                </div>
+              </div>
+
+              <p class="text-xs sm:text-sm text-slate-200 font-light leading-relaxed">
+                Founded with a vision to build sovereign surveillance and public communication media for Bihar, AIM Addcom has grown from prime outdoor media operations into an authoritative government technology contractor.
+              </p>
+
+              <div class="grid grid-cols-2 gap-3 text-xs pt-2">
+                <div class="bg-white/10 p-3 rounded-xl backdrop-blur-sm border border-white/10">
+                  <span class="text-slate-400 block text-[10px] uppercase font-bold">Registration</span>
+                  <span class="font-bold text-white">ROC Patna (Bihar)</span>
+                </div>
+                <div class="bg-white/10 p-3 rounded-xl backdrop-blur-sm border border-white/10">
+                  <span class="text-slate-400 block text-[10px] uppercase font-bold">CIN Number</span>
+                  <span class="font-mono font-bold text-brandGold-400">U74900BR2013PTC020992</span>
+                </div>
+                <div class="bg-white/10 p-3 rounded-xl backdrop-blur-sm border border-white/10">
+                  <span class="text-slate-400 block text-[10px] uppercase font-bold">Registered Office</span>
+                  <span class="font-medium text-slate-200">Bahadurpur Housing Colony, Patna</span>
+                </div>
+                <div class="bg-white/10 p-3 rounded-xl backdrop-blur-sm border border-white/10">
+                  <span class="text-slate-400 block text-[10px] uppercase font-bold">Commercial Presence</span>
+                  <span class="font-medium text-slate-200">Exhibition Rd & Gravity Mall, Patna</span>
+                </div>
+              </div>
+
+              <div class="pt-2 border-t border-white/10 flex items-center justify-between text-xs">
+                <span class="text-slate-300">Authorized Official Desk:</span>
+                <span class="font-bold text-white">aimaddcom@gmail.com</span>
+              </div>
+            </div>
+
+            <!-- Soft background glow -->
+            <div class="absolute -right-16 -bottom-16 w-56 h-56 bg-brandRed/20 rounded-full blur-3xl pointer-events-none"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GOVERNMENT RFP / INQUIRY & CONTACT SECTION -->
+  <section id="inquiry-section" class="py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200">
+        
+        <div class="text-center max-w-xl mx-auto mb-8">
+          <span class="text-xs font-bold uppercase tracking-wider text-brandRed bg-brandRed/10 px-3 py-1 rounded-full border border-brandRed/20">
+            Govt. Department & Corporate Desk
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-brandNavy mt-3">
+            Initiate Project Inquiry / Site Tender
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-2">
+            For state surveillance projects, municipal camera networks, and prime OOH media bookings across Bihar.
+          </p>
+        </div>
+
+        <form id="rfp-form" onsubmit="handleInquirySubmit(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Department / Organization Name *</label>
+              <input type="text" id="rfp-dept" required placeholder="e.g. Municipal Corp / Govt. Dept / Bank" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy focus:bg-white transition" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Authorized Contact Person *</label>
+              <input type="text" id="rfp-person" required placeholder="Full Name & Designation" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy focus:bg-white transition" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Mobile / Official WhatsApp Number *</label>
+              <input type="tel" id="rfp-phone" required placeholder="+91 94310 XXXXX" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy focus:bg-white transition" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Project Domain / Service Required *</label>
+              <select id="rfp-service" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy focus:bg-white transition">
+                <option value="Government Civic CCTV Surveillance (Patna / Bihar)">Government Civic CCTV Surveillance (Patna / Bihar)</option>
+                <option value="Inter-District / Municipal Surveillance Project">Inter-District / Municipal Surveillance Project</option>
+                <option value="OOH Highway Unipoles & Hoardings Media Booking">OOH Highway Unipoles & Hoardings Media Booking</option>
+                <option value="Integrated Command & Control Center (ICCC) Setup">Integrated Command & Control Center (ICCC) Setup</option>
+                <option value="Other Corporate Infrastructure Partnership">Other Corporate Infrastructure Partnership</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">City / Location / District</label>
+            <input type="text" id="rfp-location" placeholder="e.g. Patna, Muzaffarpur, Gaya, or Other State" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy focus:bg-white transition" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Requirement Details / Project Scope</label>
+            <textarea id="rfp-details" rows="3" placeholder="Brief outline of tender, timeline, camera count or billboard location preference..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy focus:bg-white transition"></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="w-full bg-brandNavy hover:bg-brandNavy-600 active:scale-[0.99] text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-brandNavy/20 text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition">
+              <span>Transmit Project Inquiry to Official WhatsApp Desk</span>
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.584 1.761.813 2.802.813h.005c3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.779-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.528-.491-4.996-1.344l-5.004 1.313 1.339-4.891c-.961-1.528-1.506-3.328-1.506-5.078 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+            </button>
+            <p class="text-[11px] text-center text-slate-400 mt-2">
+              🔒 Direct confidential communication with AIM Addcom Project Director (+91 94310 88291).
+            </p>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CORPORATE FOOTER -->
+  <footer class="bg-brandNavy text-white py-12 border-t border-brandNavy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-white/10">
+        
+        <!-- Company Identity -->
+        <div class="space-y-3 md:col-span-1">
+          <div class="flex items-center gap-2.5">
+            <div class="w-10 h-10 rounded-full bg-white p-0.5 flex items-center justify-center">
+              <img src="./assets/aim_addcom_logo.png" alt="AIM Addcom" class="w-full h-full object-contain rounded-full" />
+            </div>
+            <span class="text-lg font-display font-bold">AIM ADDCOM</span>
+          </div>
+          <p class="text-xs text-slate-300 font-light leading-relaxed">
+            AIM Addcom Private Limited is Bihar’s leading public sector CCTV surveillance contractor and OOH media enterprise.
+          </p>
+          <p class="text-[11px] text-brandGold-400 font-mono">CIN: U74900BR2013PTC020992</p>
+        </div>
+
+        <!-- Verticals -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-brandGold-400 mb-3">Core Verticals</h4>
+          <ul class="text-xs space-y-2 text-slate-300">
+            <li><a href="#government-surveillance" class="hover:text-white transition">Bihar Govt. Surveillance Grid</a></li>
+            <li><a href="#government-surveillance" class="hover:text-white transition">Patna Traffic PTZ & ANPR Nodes</a></li>
+            <li><a href="#command-tech" class="hover:text-white transition">ICCC Command Room Integration</a></li>
+            <li><a href="#ooh-network" class="hover:text-white transition">Highway Unipoles & Billboards</a></li>
+            <li><a href="#expansion-roadmap" class="hover:text-white transition">Inter-District Expansion</a></li>
+          </ul>
+        </div>
+
+        <!-- Registered Office -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-brandGold-400 mb-3">Corporate Offices</h4>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            <strong>Registered Office:</strong><br />
+            7, H.FB Bahadurpur Housing Colony,<br />
+            Patna, Bihar – 800026
+          </p>
+          <p class="text-xs text-slate-300 leading-relaxed mt-2">
+            <strong>Commercial Hubs:</strong><br />
+            Exhibition Road & Gravity Mall Area, Patna
+          </p>
+        </div>
+
+        <!-- Contact & Desk -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-brandGold-400 mb-3">Official Communication</h4>
+          <p class="text-xs text-slate-300 leading-relaxed mb-2">
+            Direct Line: <a href="tel:+919431088291" class="text-white font-bold hover:underline">+91 94310 88291</a>
+          </p>
+          <p class="text-xs text-slate-300 leading-relaxed mb-3">
+            Email: <span class="text-white font-medium">aimaddcom@gmail.com</span>
+          </p>
+          <a href="https://wa.me/919431088291" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition">
+            <span>WhatsApp Project Desk</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-2">
+        <p>© 2013–2026 AIM Addcom Private Limited. All rights reserved.</p>
+        <p class="text-[11px]">Authorized contractor for Public Safety Surveillance & Bihar OOH Media Networks.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Tab switcher between CCTV and OOH Media
+    function switchVertical(type) {
+      const cctvView = document.getElementById('vertical-cctv');
+      const oohView = document.getElementById('vertical-ooh');
+      const tabBtnCctv = document.getElementById('tab-btn-cctv');
+      const tabBtnOoh = document.getElementById('tab-btn-ooh');
+
+      if (type === 'cctv') {
+        cctvView.classList.remove('hidden');
+        oohView.classList.add('hidden');
+        tabBtnCctv.className = 'px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition active-tab';
+        tabBtnOoh.className = 'px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider text-slate-600 hover:text-brandNavy transition';
+      } else {
+        cctvView.classList.add('hidden');
+        oohView.classList.remove('hidden');
+        tabBtnOoh.className = 'px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition active-tab';
+        tabBtnCctv.className = 'px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider text-slate-600 hover:text-brandNavy transition';
+      }
+    }
+
+    // RFP Form Submission - direct WhatsApp formatting
+    function handleInquirySubmit(e) {
+      e.preventDefault();
+      const dept = document.getElementById('rfp-dept').value.trim();
+      const person = document.getElementById('rfp-person').value.trim();
+      const phone = document.getElementById('rfp-phone').value.trim();
+      const service = document.getElementById('rfp-service').value;
+      const location = document.getElementById('rfp-location').value.trim() || 'Patna / Bihar';
+      const details = document.getElementById('rfp-details').value.trim() || 'Official project inquiry via web portal';
+
+      const text = `*New Government / Corporate Project Inquiry*%0A%0A🏛️ *Dept / Organization:* ${dept}%0A👤 *Authorized Person:* ${person}%0A📱 *Contact Number:* ${phone}%0A🎯 *Required Domain:* ${service}%0A📍 *Location / District:* ${location}%0A📝 *Project Scope:* ${details}%0A%0A_Please schedule preliminary review and technical RFP coordination._`;
+
+      window.open(`https://wa.me/919431088291?text=${text}`, '_blank');
+    }
+  </script>
+</body>
 </html>
